@@ -1,0 +1,12 @@
+{% extends 'registration/sign_up.html' %} {% block message %} {% if
+request.method == 'POST' %} {% for person in usernames %} {% if username !=
+person.name and password != person.password %}
+<p style="color: red">Username and Password incorrect</p>
+{% elif username != person.username %}
+<p style="color: red">User Not Found</p>
+{% elif password != person.password %}
+<p style="color: red">Incorrect Password</p>
+{% endif %} {% endfor %} {% endif %} {% endblock %} {% block title %}Login{%
+endblock %} {% block sign %}Login{% endblock%} {% block email %}{% endblock %}
+{% block account %}Don't have an account? Sign Up <a href="/sign_up">Here</a>{%
+endblock %} {% block button %}Login{% endblock%}

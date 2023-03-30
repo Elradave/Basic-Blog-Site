@@ -1,0 +1,82 @@
+  input,
+  p,
+  h2 {
+    font-family: Arial;
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  input {
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgb(199, 187, 187);
+    border-style: solid;
+    padding-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+  }
+
+  button {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    background-color: rgb(41, 133, 198);
+    border-radius: 6px;
+    border-width: 1px;
+    border: none;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0 0 9px rgb(124, 116, 116);
+    color: white;
+    font-family: Arial;
+    transition: opacity 0.15s, background-color 0.15s, margin-top 0.12s;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
+
+  button:active {
+    background-color: rgb(30, 5, 109);
+  }
+
+  div {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgb(199, 187, 187);
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(245, 238, 228);
+  }
+
+  h2 {
+    border-bottom-color: rgb(199, 187, 187);
+    border-top-color: rgb(199, 187, 187);
+    padding-top: 12px;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: 1px;
+    padding-bottom: 12px;
+    box-shadow: 0 0 5px rgb(199, 187, 187);
+    background-color: rgb(252, 242, 229);
+  }
