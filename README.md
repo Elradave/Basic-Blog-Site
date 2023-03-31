@@ -18,8 +18,5 @@ Here user has ability to login and create post. User can also delete created pos
 ![homepage](https://user-images.githubusercontent.com/115457672/229166658-67f016cc-575b-4227-b8cd-ae331a27512d.jpg)
 ![newcreatedpost](https://user-images.githubusercontent.com/115457672/229166692-546ea9e2-4daf-4045-b4ca-dccc2a533a1a.jpg)
 
-# Steps
-
-
-First we start by installing django
-
+Codes are available for fork. Use as you please. You could also customise the form to suit your preference.
+I noticed in the post page the form takes the whole page. You could edit the 'Create-post.html' to customise to your taste.
