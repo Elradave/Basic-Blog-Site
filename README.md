@@ -16,7 +16,10 @@ Here user has ability to login and create post. User can also delete created pos
 ![signupuserexist](https://user-images.githubusercontent.com/115457672/229166548-93519086-442d-42ff-b8f8-d66278881ace.jpg)
 ![signupuserexist2](https://user-images.githubusercontent.com/115457672/229166640-2b38102e-7d32-4d10-aef9-170c9fa643b4.jpg)
 ![homepage](https://user-images.githubusercontent.com/115457672/229166658-67f016cc-575b-4227-b8cd-ae331a27512d.jpg)
+![createpost](https://user-images.githubusercontent.com/115457672/229171618-1c8b60f0-3146-4454-8803-b16fb33a58e0.jpg)
 ![newcreatedpost](https://user-images.githubusercontent.com/115457672/229166692-546ea9e2-4daf-4045-b4ca-dccc2a533a1a.jpg)
+
+
 
 Codes are available for fork. Use as you please. You could also customise the form to suit your preference.
 I noticed in the post page the form takes the whole page. You could edit the 'Create-post.html' to customise to your taste.
