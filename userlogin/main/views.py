@@ -27,8 +27,6 @@ def profile(request):
 
 
 def sign_up(request):
-    users = User.objects.all()
-
     if request.method == 'POST':
         usr = request.POST
         username = usr['username']
@@ -52,9 +50,7 @@ def sign_up(request):
                 login(request, user)
                 return redirect('/login')
 
-    return render(request, 'registration/sign_up.html', {
-        'users': users,
-    })
+    return render(request, 'registration/sign_up.html')
 
 
 @login_required(login_url='/login')
