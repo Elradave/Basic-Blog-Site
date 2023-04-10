@@ -1,4 +1,4 @@
-# User-Login-And-Create-Post
+# Basic Blog Site
 Here user has ability to login and create post. User can also delete created post
 
 # Requirements:
