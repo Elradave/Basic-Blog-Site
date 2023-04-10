@@ -1,0 +1,88 @@
+{% extends 'main.html' %}
+{% block title %} {{ user_id }} profile{% endblock %}
+{% block style %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'profile.css' %}"> 
+{% endblock %}
+{% block content%}
+{% if user_id == request.user %}
+<h1>My Profile</h1>
+<p class="email">{{user_id.email}}</p>
+{% else %}
+<h1>{{user_id}} Profile</h1>
+<p class="email">{{user_id.email}}</p>
+{% endif %}
+<p class="about">joined at {{ user_id.date_joined }}<br>#Here User can input information about themselves, We will implement this function later on. Or you can go ahead and do that yourself</p>
+
+{% if request.method == "POST" %}
+        <p style="color: rgb(154, 154, 154);
+                font-size: 10px;
+                line-height: 0;">
+                 You are now friends with <a href="{% url 'profile' friend %}">{{ friend }}</a></p>
+{% endif %}
+<div class="grid_div">
+    <div class="first_column">
+        <div>
+            {% if user_id == request.user %}
+                <h5 class="div_title">My Posts</h5>
+            {% else %}
+                <h5 class="div_title">{{user_id}}'s Posts </h5>
+            {% endif %}
+        </div>
+        <div class="div_post">
+            {% for post in user_post reversed %}
+                <div class="user_post">
+                        <h5 class="post_title"><a href="{% url 'post_page' post.id %}" style="text-decoration: none;">{{post.title}}</a></h5>
+                        <p class="post_description">{{post.description|truncatewords:20}}</p>
+                        <p class="post_username">{{ post.author.username }}
+                            <span class="post_time"> | posted on {{post.created_at}}</span>
+                        </p>
+                </div>
+                <div class="delete_grid">
+                    <div class="move">
+                    {% if user == post.author %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            <button
+                            type="submit"
+                            name="post-id"
+                            value="{{post.id}}"
+                            class="delete_button">
+                            Delete
+                            </button>
+                        </form>
+                    {% endif %}
+                    </div>
+                </div>
+                {% empty %}
+                <p style="
+                color: rgb(154, 154, 154);
+                font-size: 10px;">
+                No Posts Yet!!.
+                {% if user_id == request.user %} <a href="/create-post" style="text-decoration: none;">Create Post</a>
+                {% endif %}
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="second_column">
+        <h5 class="div_title">Friend Suggestion</h5>
+        {% for friend in friends_list %}
+        <div class="friend_div">
+            <img class="friend_image" src="" alt="img">
+            <p class="friend_name"><a href="{% url 'profile' friend %}" style="text-decoration: none;">{{ friend }}</a></p>
+            <p class="mutuals">{{ random }} mutual friends</p>
+            <p class="move_button">
+                <form  method="POST">
+                {% csrf_token %}
+                <button class="friend_button" value="{{ friend }}" name="friend">Add Friend</button>
+            </form>
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+    
+ 

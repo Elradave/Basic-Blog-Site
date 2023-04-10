@@ -1,0 +1,192 @@
+h1,.email {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+.email {
+    color: rgb(154, 154, 154);
+    font-size: 10px;
+}
+
+.about {
+    text-align: center;
+    color: rgb(154, 154, 154);
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+.grid_div {
+    margin-top: 20px;
+    display: block;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.first_column, .second_column {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    margin-bottom: 10px;
+    box-shadow: 0 0 1px rgb(92, 89, 89);
+}
+
+.div_title {
+    background-color: rgb(89, 84, 84);
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+.div_post {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+.user_post, .delete_grid {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+   
+}
+
+.post_username, .post_title, .post_description, .post_time {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post_username, .post_time {
+    font-size: 8px;
+    text-align: center;
+
+}
+.post_time {
+    color: gray;
+}
+
+.post_title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.post_description {
+    font-size: 11px;
+    color: gray;
+}
+
+.delete_grid {
+    text-align: right;
+}
+.move {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.delete_button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.delete_button:hover {
+    background-color: rgb(196, 23, 23);
+}
+
+.delete_button:active{
+     background-color: red;
+}
+
+.friend_div {
+    border-style: solid;
+    border-color: rgb(180, 177, 177);
+    border-width: 1px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 2px rgb(92, 89, 89);
+    background-color: rgb(221, 225, 228);
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 7px;
+    width: 150px;
+}
+
+.friend_name, .mutuals, .friend_button, .move_button {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial;
+}
+
+.friend_image {
+    object-fit: contain;
+    width: 150px;
+    object-position: left;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-color: rgb(180, 177, 177);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 3px rgb(92, 89, 89);
+    cursor: pointer;
+}
+
+.friend_name {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+    
+}
+
+.mutuals {
+    color: rgb(154, 154, 154);
+    font-size: 10px;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+.friend_button {
+    cursor: pointer;
+    background-color: rgb(76, 95, 241);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
+.friend_button:hover {
+    opacity: 0.8;
+}
+.friend_button:active {
+        background-color: rgb(6, 33, 69);
+}
+
+.move_button {
+    text-align: right;
+}

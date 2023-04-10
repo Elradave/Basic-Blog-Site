@@ -1,0 +1,17 @@
+{% extends 'registration/sign_up.html' %}
+{% block title %}Login{%endblock %}
+{% block message %}
+  {% if request.method == "POST" %}
+    <p style="color: red;
+              line-height: 0;">Incorrect Username/Password</p>
+    <p style="font-size: 8px;
+              color: red;
+              line-height: 0;">(Note that Fields may be case sensitive)</p>
+  {% endif %}  
+{% endblock %}
+{% block sign %}Login{% endblock %}
+{% block email %}{% endblock %}
+{% block account %}
+    Don't have an account? Sign Up <a href="/sign_up">Here</a>
+{% endblock %}
+{% block button %}Login{% endblock%}

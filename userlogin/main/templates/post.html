@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block title %} {{ post.author }} Post {% endblock %}
+{% block style %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'post.css' %}"> 
+{% endblock %}
+{% block content%}
+<div class="user_post">
+    <h1 class="post_title">{{post.title}}</h1>
+    <p class="post_username">{{ post.author.username }}<span class="post_time"> | posted on {{post.created_at}}</span>
+    </p>
+    <p class="post_description">{{post.description}}</p>
+        
+</div>
+{% endblock %}

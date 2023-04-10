@@ -1,0 +1,22 @@
+.post_title, .post_description, .post_time, .post_username{
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.post_description {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.post_username, .post_time {
+    font-size: 8px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 5px;
+}

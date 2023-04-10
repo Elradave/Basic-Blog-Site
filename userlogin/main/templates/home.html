@@ -1,0 +1,46 @@
+{% extends 'main.html' %}{% block title %} Home Page{% endblock %}
+{% block content %}
+{% for post in posts reversed %}
+
+<div class="card mt-2" id="top">
+  <div class="card-header">
+    <strong>
+      <a href="{% url 'profile'  post.author.username  %}" style="text-decoration: none;">{{ post.author.username }}</a> <span style="font-size: 8px;">>>></span>
+    </strong>
+  </div>
+  <div style="padding-bottom: 0;
+              padding-left: 15px;
+              margin-bottom: 5px;">
+    <div style="">
+      <h5 style="font-size: 15px;
+                line-height: 0;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                ;"><a href="{% url 'post_page' post.id %}" style="text-decoration: none;">{{post.title}}</a></h5>
+      <p style="font-size: 10px;
+                color: gray;
+                margin-bottom: 10px;
+                line-height: 10px">{{post.description|truncatewords:50}}
+                </p>
+                  <p style="font-size: 8px;
+                            color: gray;
+                            line-height: 0;
+                            margin-top: 0;">{{post.created_at}}  </p>
+    </div>
+    <div>
+      {% if user == post.author %}
+      <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="post-id" value="{{post.id}}" class="btn btn-danger">
+          Delete
+        </button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% empty %}
+<p style="font-family: Arial;font-size: 12px;">No Posts Yet :(</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+div {
+    font-family: Arial;
+}
+
+.grid {
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-family: Arial;
+    background-color: rgb(76, 74, 74);
+    display: grid;
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.right-grid {
+    text-decoration: none;
+    text-align: right;
+}
+
+a {
+    color : blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+}
+
+strong {
+    font-style: italic;
+}
+
+
