@@ -1,5 +1,10 @@
 # Basic Blog Site
-Here user has ability to login and create post. User can also delete created post
+This is a simple blog site. 
+Here users are required to Sign up and then proceed to login in order to access Webpage.
+After login, Users can View posts made by other users, sort this posts in order of newest or oldest. Users can access Author's profile and read Author's post.
+User also has ability to create and delete own posts.
+
+ I have added a functionality where users can add friends. you can tweak this to display users friends list if you like.
 
 # Requirements:
 1. Python 3.11
