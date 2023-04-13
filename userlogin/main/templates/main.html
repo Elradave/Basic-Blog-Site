@@ -36,7 +36,7 @@
       </div>
     </div>
     {% block content%}{% endblock %}
-    {% if request.path == '/' %}
+    {% if request.path == '/' or request.path == '/latest' or request.path == '/oldest' %}
     <p style="text-align: center;
               font-family: Arial;
               font-size: 12px;
