@@ -9,17 +9,20 @@ Here user has ability to login and create post. User can also delete created pos
 5. Firefox/Chrome
 
 # Preview
-![loginpagepic](https://user-images.githubusercontent.com/115457672/229160521-ebea040f-5b35-4a86-a0ba-888a7b53df7e.jpg)
-![loginpagepic2](https://user-images.githubusercontent.com/115457672/229160537-e71a2c49-6be0-45ff-9d27-0c164584ac8c.jpg)
-![signuppagepic](https://user-images.githubusercontent.com/115457672/229160824-d0aba606-e094-44bd-97fb-dbc8cf6a38aa.jpg)
-![signuppagepic2](https://user-images.githubusercontent.com/115457672/229161058-37a47e9c-e7a3-401b-9aa4-f7304f36ddef.jpg)
-![signupuserexist](https://user-images.githubusercontent.com/115457672/229166548-93519086-442d-42ff-b8f8-d66278881ace.jpg)
-![signupuserexist2](https://user-images.githubusercontent.com/115457672/229166640-2b38102e-7d32-4d10-aef9-170c9fa643b4.jpg)
-![homepage](https://user-images.githubusercontent.com/115457672/229166658-67f016cc-575b-4227-b8cd-ae331a27512d.jpg)
-![createpost](https://user-images.githubusercontent.com/115457672/229171618-1c8b60f0-3146-4454-8803-b16fb33a58e0.jpg)
-![newcreatedpost](https://user-images.githubusercontent.com/115457672/229166692-546ea9e2-4daf-4045-b4ca-dccc2a533a1a.jpg)
 
-
+![Loginpg](https://user-images.githubusercontent.com/115457672/231807082-4277f2c5-f2b0-4099-8d90-7c54f605532a.jpg)
+![loginincrtpg](https://user-images.githubusercontent.com/115457672/231807084-fbe105e2-e2eb-47b8-a3fd-ded3e8194c90.jpg)
+![signuppg](https://user-images.githubusercontent.com/115457672/231807094-ec9cace1-5b6d-4400-8e86-00c109d0e9c4.jpg)
+![signupincrct](https://user-images.githubusercontent.com/115457672/231807152-2e60f174-c69f-4645-b5c6-90c7c7aa7c06.jpg)
+![homepage](https://user-images.githubusercontent.com/115457672/231807175-8fb64c9b-75c3-44b6-8242-77cf76a619ca.jpg)
+![homepagebottom](https://user-images.githubusercontent.com/115457672/231807222-50c2f934-fcd1-4257-9e7d-f526de27efc7.jpg)
+![johndoeprofile](https://user-images.githubusercontent.com/115457672/231807232-9b57a78c-fa8e-4f55-9722-42bd5636886c.jpg)
+![johndoepost](https://user-images.githubusercontent.com/115457672/231807284-03287302-8c7e-4c8c-a637-536b83b9f1ea.jpg)
+![johndoefrens](https://user-images.githubusercontent.com/115457672/231807325-a5a2887b-6c83-41f0-bd3b-2864ff64b3d6.jpg)
+![friendprofile](https://user-images.githubusercontent.com/115457672/231807353-13bd98ac-b792-4fc9-af81-ea73f2c3605b.jpg)
+![createpostimg](https://user-images.githubusercontent.com/115457672/231807363-0e691e4c-69e3-419a-beb4-f4d23f036e46.jpg)
+![davidrealprofile](https://user-images.githubusercontent.com/115457672/231807389-453fc2ba-e891-4f88-8ab2-560d85ebcbb4.jpg)
+![bayoprofilefriend](https://user-images.githubusercontent.com/115457672/231807405-d260659f-49a8-4cd5-92ea-043f17f12062.jpg)
 
 Codes are available for fork. Use as you please. You could also customise the form to suit your preference.
 I noticed in the post page the form takes the whole page. You could edit the 'Create-post.html' to customise to your taste.
