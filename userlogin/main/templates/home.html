@@ -1,8 +1,12 @@
 {% extends 'main.html' %}{% block title %} Home Page{% endblock %}
 {% block content %}
-{% for post in posts reversed %}
-
-<div class="card mt-2" id="top">
+<div style="text-align: center;
+            font-size: 10px;
+            margin-top: 10px;" id="top">
+| <a href="{% url 'latest' %}" style="text-decoration: none;">Latest</a> | <a href="{% url 'oldest' %}" style="text-decoration: none;">Oldest</a> |
+</div>
+  {% for post in posts %}
+<div class="card mt-2">
   <div class="card-header">
     <strong>
       <a href="{% url 'profile'  post.author.username  %}" style="text-decoration: none;">{{ post.author.username }}</a> <span style="font-size: 8px;">>>></span>
@@ -11,18 +15,19 @@
   <div style="padding-bottom: 0;
               padding-left: 15px;
               margin-bottom: 5px;">
-    <div style="">
+    <div>
       <h5 style="font-size: 15px;
                 line-height: 0;
-                margin-top: 10px;
+                margin-top: 15px;
                 margin-bottom: 15px;
                 ;"><a href="{% url 'post_page' post.id %}" style="text-decoration: none;">{{post.title}}</a></h5>
       <p style="font-size: 10px;
                 color: gray;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 line-height: 10px">{{post.description|truncatewords:50}}
                 </p>
                   <p style="font-size: 8px;
+                          font-weight: bold;
                             color: gray;
                             line-height: 0;
                             margin-top: 0;">{{post.created_at}}  </p>
