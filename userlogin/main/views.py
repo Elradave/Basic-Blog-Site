@@ -18,7 +18,13 @@ def post_page(request, post_id):
 
 @login_required(login_url='/login')
 def home(request):
-    posts = Post.objects.all().order_by('?')
+    if request.method == 'GET':
+        if request.path == '/latest':
+            posts = Post.objects.all().order_by('-id')
+        elif request.path == '/oldest':
+            posts = Post.objects.all().order_by('id')
+        else:
+            posts = Post.objects.all().order_by('?')
 
     if request.method == 'POST':
         post_id = request.POST.get("post-id")
